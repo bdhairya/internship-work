@@ -1,0 +1,680 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: gilroy;
+    padding: 2rem 0rem;
+}
+.nav-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    text-align: center;
+}
+.nav-1 span{
+    font-family: gilroy;
+    font-weight: 800;
+    color: #dc3635;
+}
+.nav-1 h4{
+    font-family: gilroy;
+    font-weight: 400;
+}
+.nav-2{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+.nav-2 ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 24px;
+    z-index: 9;
+}
+.nav-2 a{
+    text-decoration: none;
+    color: #fef4e6;
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 20px;
+    z-index: 9;
+}
+.nav-2 button{
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 14px;
+    border: none;
+    background-color: #dc3635;
+    color: white;
+    border-radius: 5px;
+    z-index: 9;
+    transition: 0.4s;
+}
+.nav-2 button:hover{
+    background-color: #fff;
+    color: #dc3635;
+}
+.hero{
+    height: 100vh;
+    background-image: url(/hero.png.png);
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+}
+.hero::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.hero-content{
+    position: relative;
+    max-width: 600px;
+    padding-top: 120px;
+    z-index: 9;
+}
+.hero-content h2{
+    color: #dc3635;
+    font-family: gilroy;
+    z-index: 99;
+    font-size: 50px;
+    font-weight: 900;
+}
+.hero-content h3{
+    font-family: gilroy;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.8px;
+    padding: 5px 0px;
+}
+.hero-content h5{
+    font-size: 20px;
+    color: #ffffffae;
+    font-family: gilroy;
+    z-index: 9;
+}
+.button-group{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+.button-group button{
+    padding: 6px 20px;
+    border: none;
+    font-family: gilroy;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+}
+.button-group button:nth-child(1){
+    background-color: #dc3635;
+    color: #fff;
+    transition: 0.4s;
+}
+.button-group button:nth-child(2){
+    background-color: #fff;
+    color: #000; 
+    font-weight: 400;
+    font-family: gilroy; 
+    transition: 0.4s;
+}
+.button-group button:nth-child(1):hover{
+    background-color: #fff;
+    color: #dc3635;
+}
+.button-group button:nth-child(2):hover{
+    background-color: #000;
+    color: #fff;
+}
+.hamburger{
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.hamburger-line{
+    display: none;
+    height: 3px;
+    border-radius: 2px;
+    width: 100%;
+    background-color: #dc3635;
+    transition: 0.5s;
+}
+
+.about-me{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    background-color: #000;
+}
+.about-me-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about-me-img{
+    max-width: 500px;
+    position: relative;
+    padding: 25px 0px;
+}   
+.about-me-img img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all ease 0.4s;
+}
+.about-me-img img:hover{
+    filter: grayscale(0%);
+}
+.about-me-cont{
+    max-width: 500px;
+    padding: 125px 0px;
+}
+.about-me-cont h3{
+    color: white;
+    font-family: gilroy;
+    font-size: 40px;
+    font-weight: 700;
+    transition: all ease 0.4s;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.about-me-cont h3:hover{
+    color: #dc3635;
+}
+.about-me-cont h4{
+    padding-top: 2.5px;
+    color: #fff;
+    font-family: gilroy;
+}
+.about-me-cont h5{
+    color: #fef4e6a0;
+    font-size: 18px;
+    padding-bottom: 40px;
+    font-weight: 400;
+}
+.progress{
+    margin-bottom: 3px;
+}
+.sr-only{
+    background-color: #dc3635;
+    color: #dc3635;
+}
+.services{
+    background-color: #000;
+}
+.services-cont{
+    padding-top: 40px;
+    text-align: center;
+}
+.services-cont h2{
+    color: white;
+    font-family: gilroy;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    transition: all ease 0.4s;
+    display: inline-block;
+}
+.services-cont h4{
+    color: #fef4e6a0    ;
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+.services-cont h2:hover{
+    color: #dc3635;
+}
+.services-cont h6{
+    color: #fef4e66d;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.service-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 40px;
+
+}
+.service-cards{
+    border: 3px solid #dc3635;
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 20px 15px;
+    flex: 1 2 250px;
+ 
+}
+.service-cards img{
+    height: 65px;
+    width: 65px;
+    margin-top: 10px;
+}
+.service-cards h4{
+    color: black;
+    font-family: gilroy;
+    font-weight: 800;
+    padding-top: 5px;
+    transition: all ease 0.4s;
+}
+.service-cards h6{
+    padding-bottom: 8px;
+}
+.service-cards:hover.service-cards h4{
+    color: #dc3635;
+}
+.testimonials{
+    background-color: #000;
+}
+.testimonials-cont{
+    padding-top: 40px;
+    text-align: center;
+}
+.testimonials-cont h2{
+    color: white;
+    font-family: gilroy;
+    font-size: 40px;
+    padding-top: 20px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    transition: all ease 0.4s;
+    display: inline-block;
+}
+.testimonials-cont h4{
+    color: #fef4e6a0;
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+.testimonials-cont h2:hover{
+    color: #dc3635;
+}
+.testimonials-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 40px;
+
+}
+.testimonials-cards{
+    background-color: white;
+    border: 3px solid #dc3635;
+    text-align: center;
+    flex:  1 2 220px;
+    border-radius: 12px;
+}
+.testimonials-cards img{
+    height: 150px;
+    margin: 8px 0px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimonials-cards h6{
+    font-size: 18px;
+    color: #000;
+    font-family: gilroy;
+    font-weight: 500;
+}
+.contact{
+    background-color: #000;
+    padding-bottom: 150px;
+}
+.contact-cont{
+    padding-top: 40px;
+    text-align: center;
+}
+.contact-cont h2{
+    color: white;
+    font-family: gilroy;
+    font-size: 40px;
+    padding-top: 20px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    transition: all ease 0.4s;
+    display: inline-block;
+}
+.contact-cont h4{
+    color: #fef4e6a0;
+font-size: 20px;
+padding-top: 10px;
+font-weight: 400;
+font-size: 20px;
+padding-top: 10px;
+font-weight: 400;
+}
+.contact-cont h2:hover{
+    color: #dc3635;
+}
+.contact-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 25px;
+}
+.contact-detail input{
+        padding: 15px 15px;
+        width: 450px;
+        border-radius: 8px;
+        border: none;
+        border-color: transparent;
+        font-family: gilroy;
+        font-weight: 600;
+        color: #000;
+        align-items: start;
+        text-align: start;
+}
+input:focus{
+    outline: 2px solid #dc3635;
+    border: none;
+}
+.contact-detail input::placeholder{
+    color: #000;
+    border: none;
+}
+.contact-detail button{
+    font-family: gilroy;
+    font-weight: 600;
+    color: #fff;
+    background-color: #dc3635;
+    padding: 15px 5px;
+    width: 150px;
+    border: none;
+    transition: all ease 0.4s;
+    border-radius: 8px;
+}
+.contact-detail button:hover{
+    color: #dc3635;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* tablet resonsive */
+@media only screen and (max-width:1200px) {
+    .service-cards{
+        flex: 1 2 219px;
+    }
+}
+@media only screen and (max-width:992px) {
+    .hero{
+        height: 65vh;
+    }
+    .hero-content{
+        padding-top: 10px;
+    }
+    .nav-2{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        flex-direction: column;
+        position: fixed;
+        background-color: #000;
+        height: 100vh;
+        width: 0px;
+        left: 0%;
+        top: 0%;
+        z-index: 90;
+        overflow: hidden;
+        text-align: left;
+    }
+    .nav-1{
+        z-index: 99;
+    }
+    .nav-2 ul{
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        gap: 24px;
+        z-index: 9;
+        text-align: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    .nav-2 a{
+        text-decoration: none;
+        color: #fef4e6;
+        font-family: gilroy;
+        font-weight: 400;
+        font-size: 20px;
+        z-index: 9;
+        text-align: center;
+    }
+    .nav-2 button{
+        padding: 10px 20px;
+        text-align: center;
+        margin-bottom: 14px;
+        border: none;
+        background-color: #dc3635;
+        color: white;
+        border-radius: 5px;
+        z-index: 9;
+        margin-left: 30px;
+        white-space: nowrap;
+        transition: 0.4s;
+        margin: 0;
+    }
+    .hamburger-line{
+        display: block;
+    }
+    .about-me-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .about-me-img{
+        max-width: 550px;
+        position: relative;
+        padding-top: 50px;
+    } 
+    .about-me-cont{
+        max-width: 600px;
+        padding: 35px 0px;
+    }
+    .about-me-cont-head{
+        text-align: center;
+    }
+    .testimonials-cards{
+        flex:  2 2 230px;
+    }
+    .testimonials-cards img{
+        height: 125px;
+        width: 125px;
+    }
+    .testimonials-cards h6{
+        font-size: 19px;
+        padding: 0px 5px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .testimonials-cards{
+        flex:  2 2 210px;
+    }
+    .contact-detail button{
+        width: 130px;
+    }
+}
+
+
+/* large phone responsive */
+
+
+@media only screen and (max-width:576px) {
+    .hero-content{
+        margin-top: 10px;
+    }
+    .hero-content h2{
+        font-size: 30px;
+    }
+    .about-me-img{
+        max-width: 500px;
+        position: relative;
+        padding-top: 50px;
+    } 
+    .about-me-cont{
+        max-width: 500px;
+        padding: 35px 0px;
+    }
+    .about-me-cont h5{
+        font-size: 15px;
+    }
+    .about-me-cont-head{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}
+@media only screen and (max-width:524px) {
+   .contact-detail button{
+    width: 190px;
+   }
+}
+
+
+@media only screen and (max-width:480px) {
+    .service-cards{
+        flex: 0 2 350px;
+    }
+    .service-card{
+        justify-content: center;
+    }
+    .testimonials-cards{
+        flex:  0 2 350px;
+    }
+    .testimonials-cards img{
+        height: 130px;
+        width: 130px;
+    }
+    .testimonials-cards h6{
+        font-size: 18px;
+    }
+    .testimonials-card{
+        justify-content: center;
+    }
+
+}
+
+
+@media only screen and (max-width:460px) {
+    .service-cards{
+        flex: 0 2 350px;
+    }
+}
+
+@media only screen and (max-width:440px) {
+    .service-cards{
+        flex: 0 2 350px;
+    }
+}
+@media only screen and (max-width:424px) {
+    .contact-detail{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact-detail input{
+        width: 200px;
+        padding: 15px 35px;
+    }
+    .contact-detail button{
+        width: 200px;
+    }
+    .contact-cont h4{
+        font-size: 18px;
+    }
+}
+/* small phone responsive */
+
+
+@media only screen and (max-width:410px) {
+    .hero-content h2{
+        font-size: 35px;
+    }
+    .hero-content h3{
+        font-size: 22px;
+        padding: 2.5px 0px;
+    }
+    .hero-content h5{
+        font-size: 18px;
+    }
+    about-me-img{
+        max-width: 500px;
+        position: relative;
+        padding-top: 40px;
+    } 
+    .about-me-cont{
+        max-width: 500px;
+        padding: 25px 0px;
+    }
+
+}
+
+
+/* small phone responsive */
+
+@media only screen and (max-width:335px) {
+    .hero-content h2{
+        font-size: 35px;
+    }
+    .hero-content h3{
+        font-size: 20px;
+        padding: 2.5px 0px;
+    }
+    .hero-content h5{
+        font-size: 16px;
+    }
+
+}
+@media only screen and (max-width:250px){
+    .contact-detail button{
+        width: 150px;
+    }
+    .contact-detail input{
+        width: 150px;
+    }
+    .contact-cont h4{
+        font-size: 15px;
+    }
+}
