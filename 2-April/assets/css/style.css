@@ -1,0 +1,211 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    padding-top: 1px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #1a1a2e;
+    overflow: hidden;
+    z-index: 9;
+}
+.login{
+    position: relative;
+    margin-top: 70px;
+    height: 500px;
+    width: 400px;
+    background-color: #262638a4;
+    margin-left: 450px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.087);
+    padding-left: 50px;
+    z-index: 1;
+    overflow: hidden;
+}
+.login h1{
+    color: #9999a2;
+    font-family: gilroy;
+    margin-top: 50px;
+    font-size: 60px;
+}
+.user-input{
+    margin-top: 40px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: gilroy;
+    background-color: #29293a;
+    border: none;
+    border-radius: 12px;
+    font-family: gilroy;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #9999a2;
+    padding-left: 10px;
+}
+.user-input::placeholder{
+    font-family: gilroy;
+    font-size: 15px;
+    letter-spacing: 1px;
+    /* padding-left: 10px; */
+    color: #9999a2;
+}
+.pswrd-input{
+    margin-top: 40px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: gilroy;
+    background-color: #29293a;
+    border: none;
+    border-radius: 12px;
+    font-family: gilroy;
+    font-size: 15px;
+    padding-left: 10px;
+    color: #9999a2;
+    letter-spacing: 1px;
+}
+.pswrd-input::placeholder{
+    font-family: gilroy;
+    font-size: 15px;
+    color: #9999a2;
+    letter-spacing: 1px;
+}
+.submit{
+    position: relative;
+    margin-top: 40px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: gilroy;
+    background-color: #1a1a2e;
+    border: none;
+    border-radius: 12px;
+    font-family: gilroy;
+    font-size: 22px;
+    font-weight: 800;
+    padding-left: 10px;
+    color: #9999a2;
+    letter-spacing: 1px;
+    z-index: 1;
+    transition: all ease 0.4s;
+}
+.submit:hover{
+    color: #1a1a2e;
+    background-color: #9999a2;
+}
+.reset-dtls{
+    height: 50px;
+    width: 300px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reset-dtls h5{
+    font-family: gilroy;
+    color: white;
+    font-weight: 200;
+    text-decoration: underline;
+    font-size: 15px;
+}
+.reset-dtls h5:nth-child(1){
+    margin-left: 10px;
+}
+.reset-dtls h5:nth-child(2){
+    margin-right: 10px;
+}
+
+.login::after{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: #043673;
+    z-index: -1;
+    border-radius: 50%;
+    right: -20%;
+    bottom: -20%;
+    opacity: 0.6;
+    transition: all ease 0.5s;
+    transform: translate(0% , 0%);
+
+}
+.login::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: #043673;
+    z-index: -1;
+    border-radius: 50%;
+    left: -20%;
+    top: -20%;
+    opacity: 0.5;
+    transition: all ease 0.5s;
+    transform: translate(0% , 0%);
+}
+
+.login:hover::after{
+    height: 260px;
+    width: 260px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 0.1;
+    background-color: #9999a2;
+}
+.login:hover::before{
+    height: 250px;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 0.1;
+    background-color: blue;
+}
+.tooltip-inner {
+    background-color: #043673 !important;
+    margin-top: 5px;
+    font-family: gilroy;
+    color: #fff !important;
+    letter-spacing: 1px;
+}   
+.login img{
+    scale: 0.5;
+    position: absolute;
+    top: -30%;
+    right: -100%;
+    z-index: 1;
+    rotate: -5deg;
+    transition: all ease 0.3s;
+}
+.circle{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: #0436738c;
+    border-radius: 50%;
+}
+.gola1{
+    left: 28%;
+    top: -1%;
+    transition: all ease 0.3s;
+}
+.gola2{
+    right: 32%;
+    bottom: -1%;
+}
