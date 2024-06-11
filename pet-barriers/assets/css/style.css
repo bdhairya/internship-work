@@ -1,0 +1,246 @@
+@font-face {
+    font-family: roboto-medium;
+    src: url(/assets/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: roboto-black;
+    src: url(/assets/fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: roboto-light;
+    src: url(/assets/fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: roboto-regular;
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: inter-regular;
+    src: url(/assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: inter-semibold;
+    src: url(/assets/fonts/Inter-SemiBold.ttf);
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.nav .logo{
+    width: 220px;
+    padding-left: 20px;
+}
+.nav-details a{
+    position: relative;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: black;
+    font-family: roboto-medium;
+    font-weight: 200;
+   
+}
+.nav-details a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: black;
+    left: 0%;
+    bottom: -20%;
+    transition: all ease 0.3s;
+}
+.nav-details a:hover::after{
+    width: 95%;
+}
+.call-details i{
+    font-size: 20px;
+}
+.call-details span{
+    font-family: roboto-medium;
+    font-size: 15px;
+    padding-left: 2px;
+}
+.call-details h5{
+    font-size: 15px;
+    font-family: roboto-medium;
+    padding-top: 2px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.nav-icons{
+    margin-right: 30px;
+}
+.nav-icons i{
+    font-size: 20px;
+    padding: 0px 5px;
+}
+.menu-responsive{
+    position: relative;
+    z-index: 7;
+}
+.menu-responsive i{
+    font-size: 20px;
+    padding: 0px 5px;
+}
+.menu-responsive{
+    display: none;
+}
+.brand-logo{
+    background-color: #FFD457;
+
+}
+.badges{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.blocks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #0000002e;
+    text-align: center;
+    gap: 20px;
+    min-width: 325px;
+}
+.remove-border{
+    border: none;
+}
+
+.blocks img {
+   width: 50px;
+}
+.blocks h4{
+    font-size: 14px;
+    font-family: inter-regular;
+    color: black;
+    font-weight: 900;
+}
+/* #blocks1{
+    background-color: red;
+    padding-left: 5px;
+    width: 80px;
+}
+#blocks1 h4{
+    padding-right: 25px;
+}
+#blocks1 img{
+    padding-right: 0px;
+} */
+.slick-initialized .slick-slide {
+    display: flex !important;
+}
+#blocks5{
+    border: none;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #223772;
+}
+.hero-cont h3{
+    font-family: roboto-regular;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    padding-left: 120px;
+    padding-top: 80px;
+}
+.hero-cont h1{
+    font-family: roboto-regular;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+    padding-left: 47px;
+    letter-spacing: 1px;
+    padding-top: 60px;
+    text-align: center;
+}
+.hero-cont button{
+    color: #000;
+    background-color: #FFD457;
+    padding: 25px 50px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 60px;
+    margin-left: 160px;
+    margin-bottom: 50px;
+}
+.hero-cont button h4{
+    font-size: 20px;
+}
+.hero-cont button h4 span{
+    font-weight: 100;
+}
+.hero-img-dog{
+    height: 420px;
+    width: 420px;
+    border-radius: 50%;
+    background-image: url(/assets/media/dog-bg-hero.svg);
+    border: 6px solid white;
+    margin-left: 100px;
+    background-position: center;
+    background-size: cover;
+}
+.icon-service{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 0px 150px;
+    background-color: #CFDCFF;
+}
+.icons img{
+    height: 40px;
+    width: 40px;
+    padding-top: 5px;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 15px;
+}
+.icons h3{
+    font-size: 14px;
+    font-family: inter-semibold;
+    text-align: center;
+    line-height: 20px;
+    overflow: hidden;
+}
+#icon3{
+    margin-top: 20px;
+}
+li{
+    display: inline-block;
+    list-style-type: none;
+}
